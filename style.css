@@ -1,0 +1,415 @@
+body{
+	scroll-behavior: smooth;
+}
+.navi{
+	position: sticky;
+}
+.heading{
+	background-image: linear-gradient(to bottom, rgba(0,0,0,.2),  rgba(0,0,0,.7)), url("images/back.jpg");
+	background-size: cover;
+	background-position: center;),
+	background-attachment: fixed;
+	height:100vh;
+	-webkit-animation: bg-pan-br 40s infinite both;
+	        animation: bg-pan-br 40s infinite both;
+}
+@-webkit-keyframes bg-pan-br {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+@keyframes bg-pan-br {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.heading .hello{
+	font-size: 100px;
+font-family: 'Playfair Display';
+	
+}
+.img-div{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.heading img{
+	border-radius: 50%;
+	width: 25%;
+	height: auto;
+}
+.hello{
+}
+
+.about{
+	background: url("images/back2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about h3{
+	transform-origin: left;
+}
+.animp{
+	font-size: 50px;
+	font-weight: 600;
+	position: relative;
+	transform: scaleX(0);
+	transition: .2s;
+}
+.animp[data-scroll="in"]{
+transition-delay: 0s;
+transform: scaleX(1);
+}
+p{
+	opacity: 0;
+	transition: 1s;
+}
+p[data-scroll="in"]{
+opacity: 1;
+transition-delay: .5s;
+}
+
+.education{
+	background: url("images/school.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-animation: bg-pan-br 40s infinite both;
+	        animation: bg-pan-br 40s infinite both;
+}
+@-webkit-keyframes bg-pan-br {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+@keyframes bg-pan-br {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.education h3{
+	transform-origin: right;
+}
+#skills{
+	background: url("images/robo.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#skills h3{
+	transform-origin: left;
+}
+.bar-anim{
+	animation: anim1 5s;
+}
+@keyframes anim1{
+	0%{
+		width: 0%;
+	}
+}
+.project{
+	background-image: url("images/space.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+-webkit-animation: bg-pan-bl 25s infinite both;
+	        animation: bg-pan-bl 25s infinite both;
+}
+@-webkit-keyframes bg-pan-bl {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@keyframes bg-pan-bl {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+
+.project h3{
+	transform-origin: right;
+}
+#project img{
+	display: flex;
+	width: 50%;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100vh;
+  overflow: hidden;
+  border: none;
+  height: 100vh;
+  padding: 0px;
+  position: relative;
+}
+#scene{
+display: flex;
+}
+
+.container--offset {
+  margin-left: 0;
+}
+.scene{
+	margin:0;
+	padding: 0;
+}
+.github{
+	text-decoration: none;
+	font-size: 30px;
+	padding: 8px 20px;
+	background: #fff;
+	color: #000;
+	border-radius: 10px;
+	transition: 0.5s;
+	border: 1px solid #fff;
+		cursor: pointer;
+
+}
+.github:hover{
+	color: #fff;
+	background-color: black;
+
+}
+.contact{
+	
+	background: url("images/mountain.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-animation: bg-pan-br 40s infinite both;
+	        animation: bg-pan-br 40s infinite both;
+}
+
+.contact h3{
+	transform-origin: top;
+}
+.form-img-div img{
+	animation: anim2 4s linear infinite;
+	position: relative;
+	top:0;
+	border-radius: 5px;
+}
+.contact .social-icon a{
+	text-decoration: none;
+}
+.contact .social-icon i{
+	border-radius: 50%;
+	font-size: 30px;
+	color:#fff;
+	margin: 10px auto;
+	transition: .5s;
+}
+.social-icon{
+	background: linear-gradient(to left, transparent, rgba(255,255,255,.5), transparent);
+
+}
+.fb{
+	padding: 10px 15px;
+}
+.google{
+	padding: 10px;
+}
+.git{
+	padding: 10px;
+}
+.insta{
+	padding: 10px 12px;
+	 background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+
+}
+.contact .social-icon i:hover{
+	-webkit-animation: text-shadow-drop-center 0.6s both;
+	        animation: text-shadow-drop-center 0.6s both;
+	        transform: scale(0.9);
+}
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+/* @keyframes anim2{
+	0%{
+		top: 0px;
+	}
+	50%{
+		top: 30px;
+	}
+	100%{
+		top: 0px;
+	}
+}*/
+h3{
+	margin-bottom: 15px;
+font-size: 30px;
+transform-origin: left;
+transform: scaleX(0);
+padding: 7px;
+transition: 1s;
+position: relative;
+}
+h3:before{
+content:"";
+width: 100%;
+height:100%;
+background: linear-gradient(to left, transparent, rgba(0,0,0,.5), transparent);
+position: absolute;
+top:0;
+left:0;
+transition: 1s;
+}
+h3[data-scroll="in"]{
+transform: scaleX(1);
+}
+h3[data-scroll="in"]:before{
+transform: scaleX(0);
+transition-delay: 1s;
+}
+.skill1 div{
+	transform-origin: left;
+transform: scaleX(0);
+transition: 1.5s;
+position: relative;
+}
+.skill1 div[data-scroll="in"]{
+	transform: scaleX(1);
+}
+.skill2 div{
+	transform-origin: right;
+transform: scaleX(0);
+transition: 1.5s;
+position: relative;
+}
+.skill2 div[data-scroll="in"]{
+	transform: scaleX(1);
+}
+.footer{
+	position: relative;
+	bottom: 100px;
+	left:0;
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+}
+
+.footer .wave{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url("images/wave.png");
+	background-size: 1000px 100px;
+}
+.wave1{
+	animation: animate 30s linear infinite;
+	z-index: 1000;
+}
+@keyframes animate{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 1000px;
+	}
+}
+.wave3{
+	animation: animate 15s linear infinite;
+	z-index: 998;
+	opacity: .6;
+}
+.wave2{
+	animation: animate2 25s linear infinite;
+	z-index: 998;
+	opacity: .4;
+}
+.wave4{
+	animation: animate2 10s linear infinite;
+	z-index: 998;
+	opacity: .2;
+}
+@keyframes animate2{
+	0%{
+		background-position: 1000px;
+	}
+	100%{
+		background-position: 0px;
+	}
+}
+.foot{
+	position: relative;
+	bottom: 100px;
+	
+	margin: 0;
+}
+.foot h2{
+	font-size: 15px;
+}
+.foot a{
+	text-decoration: none;
+	color: #333;
+}
+.foot i{
+	margin-right: 5px;
+}
